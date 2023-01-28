@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var penumpang =[
+                {
+                    nama_penumpang :"marklee",
+                    driver :[
+                    {nama :"ipin", lama :90, kendaraan :"Mobil kolbak", driver  :1000}
+                    ]
+                },
+                {
+                    nama_penumpang :"Jamal",
+                    driver :[
+                    {nama :"upin", lama :80, kendaraan :"Motor supra", driver  :2000}
+                    ]
+                }
+                ];
+         document.write ('<h1> List Penumpang </h1>');
+         
+                penumpang.forEach (p => {
+                
+         document.write (`Nama Penumpang : ${p.nama_penumpang } <br />`);
+         document.write ("Nama Driver : ")
+         
+                 p.driver.forEach (driver => {
+         document.write (`${driver.nama} <br /> `);
+         document.write (`Lama Perjalanan : ${driver.lama} Menit <br />`);
+         document.write (`Tarif Permenit Driver : ${driver.driver} <br /> `);
+         document.write (`Kendaraan : ${driver.kendaraan} <br /> `);
+         document.write (`Total Bayar : ${driver.lama * driver.driver} `);
+         
+                    })
+                    document.write ("<br />");
+                    document.write ("<hr />");
+                 });
+         </script>
+</body>
+</html>
