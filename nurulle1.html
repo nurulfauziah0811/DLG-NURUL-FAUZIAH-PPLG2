@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var konfirmasi = confirm(" apakah anda ingin memasuki nama lagi?")
+
+        var list_nama = [];
+        //list_nama.push("nama1");
+        //list_nama.push("nama2");
+        //list_nama.push("nama3");
+
+        document.write(list_nama);
+
+    
+        var konfirmasi = confirm("apakah anda ingin memasukan nama lagi ?")
+        var list_nama = []; //array
+            while( konfirmasi ){ //ketika user klik ok konfirmasi
+            var nama = prompt("masukan nama anda ?");
+            list_nama.push(nama);
+            konfirmasi = confirm("apakah anda ingi memasukan nama lagi ?")
+            } 
+            document.write(list_nama);
+                
+    </script>
+</body>
+</html>
