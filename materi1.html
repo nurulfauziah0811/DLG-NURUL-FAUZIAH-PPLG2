@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class kucing {
+            constructor(){
+                this.tinggi = "12cm";
+                this.kaki = 4
+
+            }
+
+            warna_bulu = "pink";
+            warna_mata = "biru";
+            ekor = "mini";
+            jalan() {
+                return "jalan dengan 4 kaki";
+            }
+            berlari() {
+                return "lari dengan 4 kaki";
+            }
+        }
+
+        class anak_kucing extends kucing {
+            warna_bulu = "hijau";
+        }
+        var anak_kucing1 = new anak_kucing
+
+         document.write (anak_kucing1.warna_bulu + "<br />");
+         document.write (anak_kucing1.warna_mata + "<br />");
+         document.write (anak_kucing1.ekor + "<br />");
+         document.write (anak_kucing1.tinggi + "<br />");
+    </script>
+</body>
+</html>
