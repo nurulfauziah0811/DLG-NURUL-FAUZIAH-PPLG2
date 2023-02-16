@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class siswa{
+            nama = "mark";
+            umur;
+            nilai_b_indo;
+            nilai_b_inggris;
+            #kkm = 75;
+
+            cek_kelulusan(){
+                
+                var rata_rata = (this.nilai_b_indo + this.nilai_b_inggris) / 2;
+                if(rata_rata > this.#kkm){
+                    document.write(this.nama + " lulus ");
+                }else if(rata_rata < this.#kkm){
+                    document.write("mark tidak lulus");
+                }
+            }
+        }
+
+        var siswa1 = new siswa();
+        siswa1.umur = 17;
+        siswa1.nilai_b_indo = 60;
+        siswa1.nilai_b_inggris = 75;
+
+        siswa1.cek_kelulusan();
+    </script>
+</body>
+</html>
