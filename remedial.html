@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+     class siswa{
+            nama= "nurul fauziah dwi novitasari";
+            kelas= "10 PPLG 2";
+            umur= "18";
+            tgl_lahir= "08 november 2005";
+
+        }
+
+     class siswa_rpl extends siswa{
+            jurusan= "PPLG";
+            nama_lab = "RPL";
+
+            ngoding(){
+                return "sedang membuat codingan";
+            }
+         }
+
+         var siswa_rpl1 = new siswa_rpl
+
+         document.write(`Nama : ${siswa_rpl1.nama}<br/>`)
+         document.write(`Kelas : ${siswa_rpl1.kelas}<br/>`)
+         document.write(`Umur : ${siswa_rpl1.umur}<br/>`)
+         document.write(`Tanggal Lahir : ${siswa_rpl1.tgl_lahir}<br/>`)
+         document.write(`Nama lab : ${siswa_rpl1.nama_lab}<br/>`)   
+         document.write(`Jurusan : ${siswa_rpl1.jurusan}<br/>`)     
+        
+         document.write(siswa_rpl1.ngoding())
+
+</script>  
+</body>
+</html>
